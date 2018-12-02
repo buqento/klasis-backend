@@ -581,22 +581,22 @@
     },
     {
         "name": "codeception/phpunit-wrapper",
-        "version": "7.3.2",
-        "version_normalized": "7.3.2.0",
+        "version": "7.4.0",
+        "version_normalized": "7.4.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/Codeception/phpunit-wrapper.git",
-            "reference": "a5633c736e0e0022bc5065b27c63f2d1aa97b69f"
+            "reference": "4d09630101f1f746f6c073fdc1b76bd17e12c908"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/a5633c736e0e0022bc5065b27c63f2d1aa97b69f",
-            "reference": "a5633c736e0e0022bc5065b27c63f2d1aa97b69f",
+            "url": "https://api.github.com/repos/Codeception/phpunit-wrapper/zipball/4d09630101f1f746f6c073fdc1b76bd17e12c908",
+            "reference": "4d09630101f1f746f6c073fdc1b76bd17e12c908",
             "shasum": ""
         },
         "require": {
             "phpunit/php-code-coverage": "^6.0",
-            "phpunit/phpunit": "~7.1.0|~7.2.0|~7.3.0",
+            "phpunit/phpunit": ">=7.1 <7.5",
             "sebastian/comparator": "^3.0",
             "sebastian/diff": "^3.0"
         },
@@ -604,7 +604,7 @@
             "codeception/specify": "*",
             "vlucas/phpdotenv": "^2.4"
         },
-        "time": "2018-10-07T21:30:01+00:00",
+        "time": "2018-12-02T15:15:13+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2315,17 +2315,17 @@
     },
     {
         "name": "phpunit/phpunit",
-        "version": "7.3.5",
-        "version_normalized": "7.3.5.0",
+        "version": "7.4.4",
+        "version_normalized": "7.4.4.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/phpunit.git",
-            "reference": "7b331efabbb628c518c408fdfcaf571156775de2"
+            "reference": "b1be2c8530c4c29c3519a052c9fb6cee55053bbd"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/7b331efabbb628c518c408fdfcaf571156775de2",
-            "reference": "7b331efabbb628c518c408fdfcaf571156775de2",
+            "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b1be2c8530c4c29c3519a052c9fb6cee55053bbd",
+            "reference": "b1be2c8530c4c29c3519a052c9fb6cee55053bbd",
             "shasum": ""
         },
         "require": {
@@ -2346,11 +2346,11 @@
             "phpunit/php-timer": "^2.0",
             "sebastian/comparator": "^3.0",
             "sebastian/diff": "^3.0",
-            "sebastian/environment": "^3.1",
+            "sebastian/environment": "^3.1 || ^4.0",
             "sebastian/exporter": "^3.1",
             "sebastian/global-state": "^2.0",
             "sebastian/object-enumerator": "^3.0.3",
-            "sebastian/resource-operations": "^1.0",
+            "sebastian/resource-operations": "^2.0",
             "sebastian/version": "^2.0.1"
         },
         "conflict": {
@@ -2364,14 +2364,14 @@
             "ext-xdebug": "*",
             "phpunit/php-invoker": "^2.0"
         },
-        "time": "2018-09-08T15:14:29+00:00",
+        "time": "2018-11-14T16:52:02+00:00",
         "bin": [
             "phpunit"
         ],
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "7.3-dev"
+                "dev-master": "7.4-dev"
             }
         },
         "installation-source": "dist",
@@ -2678,30 +2678,30 @@
     },
     {
         "name": "sebastian/environment",
-        "version": "3.1.0",
-        "version_normalized": "3.1.0.0",
+        "version": "4.0.1",
+        "version_normalized": "4.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/environment.git",
-            "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5"
+            "reference": "febd209a219cea7b56ad799b30ebbea34b71eb8f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
-            "reference": "cd0871b3975fb7fc44d11314fd1ee20925fce4f5",
+            "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/febd209a219cea7b56ad799b30ebbea34b71eb8f",
+            "reference": "febd209a219cea7b56ad799b30ebbea34b71eb8f",
             "shasum": ""
         },
         "require": {
-            "php": "^7.0"
+            "php": "^7.1"
         },
         "require-dev": {
-            "phpunit/phpunit": "^6.1"
+            "phpunit/phpunit": "^7.4"
         },
-        "time": "2017-07-01T08:51:00+00:00",
+        "time": "2018-11-25T09:31:21+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "3.1.x-dev"
+                "dev-master": "4.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3003,27 +3003,27 @@
     },
     {
         "name": "sebastian/resource-operations",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sebastianbergmann/resource-operations.git",
-            "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52"
+            "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
-            "reference": "ce990bb21759f94aeafd30209e8cfcdfa8bc3f52",
+            "url": "https://api.github.com/repos/sebastianbergmann/resource-operations/zipball/4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
+            "reference": "4d7a795d35b889bf80a0cc04e08d77cedfa917a9",
             "shasum": ""
         },
         "require": {
-            "php": ">=5.6.0"
+            "php": "^7.1"
         },
-        "time": "2015-07-28T20:34:47+00:00",
+        "time": "2018-10-04T04:07:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
-                "dev-master": "1.0.x-dev"
+                "dev-master": "2.0-dev"
             }
         },
         "installation-source": "dist",
@@ -3278,17 +3278,17 @@
     },
     {
         "name": "symfony/contracts",
-        "version": "v1.0.0",
-        "version_normalized": "1.0.0.0",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/contracts.git",
-            "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62"
+            "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/contracts/zipball/4a33574d5771f4b04334cd4f7d43de96a92efb62",
-            "reference": "4a33574d5771f4b04334cd4f7d43de96a92efb62",
+            "url": "https://api.github.com/repos/symfony/contracts/zipball/3edf0ab943d1985a356721952cba36ff31bd6e5f",
+            "reference": "3edf0ab943d1985a356721952cba36ff31bd6e5f",
             "shasum": ""
         },
         "require": {
@@ -3305,7 +3305,7 @@
             "symfony/service-contracts-implementation": "",
             "symfony/translation-contracts-implementation": ""
         },
-        "time": "2018-10-31T08:00:32+00:00",
+        "time": "2018-11-24T09:35:08+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
