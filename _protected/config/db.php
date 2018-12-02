@@ -3,13 +3,13 @@
 return [
     'class' => 'yii\db\Connection',
 
-    // 'dsn' => 'mysql:host=localhost;dbname=klasisambon',
-    // 'username' => 'root',
-    // 'password' => '',
-
     'dsn' => 'mysql:host=localhost;dbname=klasisambon',
-    'username' => 'root',
+
+    'username' => 'timoerin_bvqento',
     'password' => 'Manggureb3!',
+    // 'username' => 'root',
+    // 'password' => 'Manggureb3!',
+
     'charset' => 'utf8',
 
     // Schema cache options (for production environment)
