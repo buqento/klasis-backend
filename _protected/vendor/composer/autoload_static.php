@@ -49,7 +49,6 @@ class ComposerStaticInit138c36c3e7e343497fb7d3706a5f4f9a
         'd' => 
         array (
             'dosamigos\\tinymce\\' => 18,
-            'dosamigos\\ckeditor\\' => 19,
             'dosamigos\\chartjs\\' => 18,
             'dmstr\\' => 6,
         ),
@@ -65,6 +64,7 @@ class ComposerStaticInit138c36c3e7e343497fb7d3706a5f4f9a
         array (
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
+            'Symfony\\Contracts\\' => 18,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\Finder\\' => 25,
             'Symfony\\Component\\EventDispatcher\\' => 34,
@@ -174,10 +174,6 @@ class ComposerStaticInit138c36c3e7e343497fb7d3706a5f4f9a
         array (
             0 => __DIR__ . '/..' . '/2amigos/yii2-tinymce-widget/src',
         ),
-        'dosamigos\\ckeditor\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/2amigos/yii2-ckeditor-widget/src',
-        ),
         'dosamigos\\chartjs\\' => 
         array (
             0 => __DIR__ . '/..' . '/2amigos/yii2-chartjs-widget/src',
@@ -201,6 +197,10 @@ class ComposerStaticInit138c36c3e7e343497fb7d3706a5f4f9a
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
+        ),
+        'Symfony\\Contracts\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/contracts',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -282,10 +282,6 @@ class ComposerStaticInit138c36c3e7e343497fb7d3706a5f4f9a
             'Prophecy\\' => 
             array (
                 0 => __DIR__ . '/..' . '/phpspec/prophecy/src',
-            ),
-            'PHPExcel' => 
-            array (
-                0 => __DIR__ . '/..' . '/phpoffice/phpexcel/Classes',
             ),
         ),
         'H' => 
