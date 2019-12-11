@@ -7,9 +7,9 @@ return [
     // 'username' => 'root',
     // 'password' => 'Manggureb3!',
 
-    'dsn' => 'mysql:host=localhost;dbname=timoerin_klasis',
-    'username' => 'timoerin_bvqento',
-    'password' => 'Manggureb3!',
+    'dsn' => 'mysql:host=localhost;dbname=klasisko_dev',
+    'username' => 'root',
+    'password' => '',
 
     'charset' => 'utf8',
 

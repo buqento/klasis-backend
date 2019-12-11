@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 use app\models\Pendidikan;
+use app\models\Jemaat;
 use kartik\select2\Select2;
 use kartik\date\DatePicker;
 use kartik\file\FileInput;
@@ -13,6 +14,12 @@ use kartik\file\FileInput;
     <?php $form = ActiveForm::begin(); ?>
 
     <div class="col-md-6">
+
+        <?php
+        $jemaats = Jemaat::find()->select('nama_jemaat')->indexBy('id')->column();
+        echo $form->field($model, 'jemaat_id')->widget(Select2::classname(), [
+            'data' => $jemaats,
+        ]);?>
 
         <?= $form->field($model, 'nama')->textInput(['maxlength' => true]) ?>
 

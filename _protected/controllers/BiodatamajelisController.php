@@ -70,6 +70,7 @@ class BiodatamajelisController extends Controller
         $post = Yii::$app->request->post('BiodataMajelis');
         if (Yii::$app->request->isPost) {
 
+            $model->jemaat_id = $post['jemaat_id'];
             $model->nama = $post['nama'];
             $model->tempat_lahir = $post['tempat_lahir'];
             $model->tanggal_lahir = $post['tanggal_lahir'];
@@ -105,10 +106,39 @@ class BiodatamajelisController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        // $model = new BiodataMajelis();
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+        $post = Yii::$app->request->post('BiodataMajelis');
+        if (Yii::$app->request->isPost) {
+
+            $model->jemaat_id = $post['jemaat_id'];
+            $model->nama = $post['nama'];
+            $model->tempat_lahir = $post['tempat_lahir'];
+            $model->tanggal_lahir = $post['tanggal_lahir'];
+            $model->jabatan = $post['jabatan'];
+            $model->alamat = $post['alamat'];
+            $model->telepon = $post['telepon'];
+            $model->email = $post['email'];
+            $model->pendidikan_id = $post['pendidikan_id'];
+            $model->pekerjaan = $post['pekerjaan'];
+            $model->keterangan = $post['keterangan'];
+            $model->jenis_kelamin = $post['jenis_kelamin'];
+
+            // if(empty($post['foto'])){
+            // }else{
+                $model->foto = UploadedFile::getInstance($model, 'foto');
+                $model->upload();
+                $model->foto = $this->generateBase64($model->foto);
+            // }
+
+            if($model->save()){
+                return $this->redirect(['view', 'id' => $model->id]);
+            }
         }
+
+        // if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        //     return $this->redirect(['view', 'id' => $model->id]);
+        // }
 
         return $this->render('update', [
             'model' => $model,

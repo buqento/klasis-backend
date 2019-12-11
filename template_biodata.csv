@@ -1,0 +1,11 @@
+PERHATIAN:;;;;;;;;;;;;;;;
+JUDUL setiap kolom (nama, jenis_kelamin, tempat_lahir dst...) HARUS diHAPUS sebelum diimport;;;;;;;;;;;;;;;
+Format tanggal_lahir yang BENAR contohnya: 1990-10-30 ;;;;;;;;;;;;;;;
+Format tanggal_lahir yang SALAH contohnya: 30/10/1990 ;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;
+nama;jenis_kelamin;tempat_lahir;tanggal_lahir;golongan_id;pendidikan_id;alamat;cacat_id;jemaat_id;sektor_id;unit_id;status_pernikahan;status_hidup;status_baptis;status_sidi;pekerjaan_id
+Nico Daniel Urath;1;Singaraja;05/04/1967;2;7;Batu Meja;0;21;1;1;0;0;0;0;6
+Elizabeth Urath/L;2;Ambon;06/06/1966;1;4;Batu Meja;0;21;1;1;0;0;0;0;1
+Gracelia Urath;2;Ambon;19/08/1995;2;6;Batu Meja;0;21;1;1;0;0;0;0;3
+Imelda Urath;2;Ambon;14/06/2001;1;4;Batu Meja;0;21;1;1;0;0;0;0;1
+Ferdinand Daniel Lucas;1;Ambon;20/05/1968;2;4;Kusu-Kusu;0;21;1;1;0;0;0;0;6

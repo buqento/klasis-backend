@@ -63,11 +63,20 @@ class BiodataSearch extends Biodata
         }
 
         // grid filtering conditions
-        $query->andFilterWhere([
-            'id' => $this->id,
-            'tanggal_lahir' => $this->tanggal_lahir,
-            'created_at' => $this->created_at,
-        ]);
+        if(Yii::$app->user->identity->id == 1){
+            $query->andFilterWhere([
+                'id' => $this->id,
+                'tanggal_lahir' => $this->tanggal_lahir,
+                'created_at' => $this->created_at
+            ]);
+        }else{
+            $query->andFilterWhere([
+                'id' => $this->id,
+                'tanggal_lahir' => $this->tanggal_lahir,
+                'created_at' => $this->created_at,
+                'jemaat_id' => Yii::$app->user->identity->id
+            ]);    
+        }
 
         $query->andFilterWhere(['like', 'nama', $this->nama])
             ->andFilterWhere(['like', 'tempat_lahir', $this->tempat_lahir])

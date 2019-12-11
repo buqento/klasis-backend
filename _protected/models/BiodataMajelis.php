@@ -39,7 +39,7 @@ class BiodataMajelis extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama', 'tempat_lahir', 'tanggal_lahir', 'jabatan', 'alamat', 'telepon', 'foto', 'pendidikan_id', 'pekerjaan', 'jenis_kelamin'], 'required'],
+            [['nama', 'tempat_lahir', 'tanggal_lahir', 'jabatan', 'alamat', 'telepon', 'pendidikan_id', 'pekerjaan', 'jenis_kelamin'], 'required'],
             [['tanggal_lahir', 'created_at'], 'safe'],
             [['pendidikan_id', 'status_aktif', 'jenis_kelamin'], 'integer'],
             [['nama', 'jabatan', 'alamat'], 'string', 'max' => 100],
@@ -88,6 +88,11 @@ class BiodataMajelis extends \yii\db\ActiveRecord
     public function getPendidikan()
     {
         return $this->hasOne(Pendidikan::className(), ['id' => 'pendidikan_id']);
+    }
+
+    public function getJemaat()
+    {
+        return $this->hasOne(Jemaat::className(), ['id' => 'jemaat_id']);
     }
 
 }

@@ -74,21 +74,6 @@ class SiteController extends Controller
         $jumlahPerempuan = Biodata::find()->where(['jenis_kelamin' => 2])->count();
         $jumlahPelayan = BiodataMajelis::find()->where(['status_aktif' => 1])->count();
 
-        $jumlahBaptisLaki = Biodata::find()
-            ->where(
-                [
-                    'jenis_kelamin' => 1,
-                    'status_baptis' => 1
-                ]
-            )->count();
-        $jumlahBelumBaptisLaki = Biodata::find()
-            ->where(
-                [
-                    'jenis_kelamin' => 1,
-                    'status_baptis' => 0
-                ]
-            )->count();
-
         
         return $this->render('index', [
             'jumlahJemaat' => $jumlahJemaat,
@@ -97,9 +82,6 @@ class SiteController extends Controller
             'jumlahLaki' => $jumlahLaki,
             'jumlahPerempuan' => $jumlahPerempuan,
             'jumlahPelayan' => $jumlahPelayan,
-
-            'jumlahBaptisLaki' => $jumlahBaptisLaki,
-            'jumlahBelumBaptisLaki' => $jumlahBelumBaptisLaki,
 
             'r031' => $this->tByAll(0, 3, 1),
             'r032' => $this->tByAll(0, 3, 1),

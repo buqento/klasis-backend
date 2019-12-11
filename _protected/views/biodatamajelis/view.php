@@ -19,6 +19,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'model' => $model,
             'attributes' => [
                 // 'id',
+                [
+                    'attribute' => 'jemaat_id',
+                    'value' => function($data) {
+                        return $data->jemaat->nama_jemaat;
+                    }
+                ],
                 'nama',
                 'tempat_lahir',
                 'tanggal_lahir',

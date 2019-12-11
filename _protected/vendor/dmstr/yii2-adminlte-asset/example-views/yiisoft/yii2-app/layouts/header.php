@@ -20,7 +20,7 @@ use yii\helpers\Html;
             <ul class="nav navbar-nav">
 
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<?php // Yii::$app->user->identity->username ?> <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin (<?= Yii::$app->user->identity->username ?>) <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
                     <!-- <li><a href="#">Action</a></li> -->
                     <!-- <li class="divider"></li> -->
